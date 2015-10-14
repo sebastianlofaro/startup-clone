@@ -1,11 +1,187 @@
+/* CSS reset 
+	(all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+
+
+/* General styles 
+	(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #838994;
+	letter-spacing: 0.03em;
+}
+
+a {
+	text-decoration: none;
+	color: grey;
+}
+
+a:hover {
+	color: red;
+}
+
+h1 {
+	font-size: 3.125rem;
+	font-weight: 300;
+}
+
+h2 {
+	font-size: 2.75rem;
+	font-weight: 300;
+}
+
+h3 {
+	font-size: 1.563rem;
+	font-weight: 300;
+}
+
+h5 {
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+
+/* Header styles 
+	(all the styles inside the < header > or < nav > tags) 
+*/
 
 /* Navigation Section */
 .top-navigation {
 	background-color: #fff;
+	border: 1px solid grey;
+	position: fixed;
+	width: 100%;
+	background-color: rgba(255, 255, 255, .95);
+	z-index: 10000;
 }
-.top-navigation > .content {
-	width: 970px;
-	height: 70px;
+.top-navigation .content {
+	width: 50rem;
+	height: 4.5rem;
 	margin: 0 auto;
 }
+
+.top-navigation .links {
+	float: right;
+	margin-top: 1.6rem;
+}
+
+.top-navigation .links li {
+	display: inline-block;
+	list-style-type: none;
+	margin-left: 1rem;
+}
+
+.top-navigation .logo {
+	height: 4.5rem;
+}
+
+
+/* Content styles 
+	(all the styles inside the < sections > or < aside > tags)
+*/
+.introduction {
+    background-image: url('../img/first-background.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+}
+
+.introduction .content {
+	width: 50rem;
+	color: white;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+.introduction h1 {
+	padding-top: 18.125rem;
+}
+ .introduction h3 {
+ 	padding-top: .625rem;
+ }
+
+.introduction .content button {
+	width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+    margin-top: 1rem;
+}
+
+.cases .content{
+	width: 50rem;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 10rem;
+	color: black;
+}
+
+.cases .content .devices li {
+	margin-top: 2.34rem;
+	width: 30%;
+	display: inline-block;
+}
+
+
+/* Footer styles 
+	(all the styles inside the < footer > tag)
+*/
+
+.social {
+	margin-top: 9.3rem;
+}
+
+.social .content {
+	width: 50rem;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.social .content h5 {
+	padding-top: 1.3rem;
+}
+
+.social .content li {
+	list-style-type: none;
+	display: inline-block;
+	border: 1px solid grey;
+	width:2rem;
+	height:1.5rem;
+	border-radius: 100%;
+	padding: 0;
+	padding-top: 7px;
+	margin: 1.25rem 5px;
+}
+
+.social .content .twitter {
+	color: #55acee;
+}
+
+.social .content .facebook {
+	color: #4c66a4;
+}
+
+.social .content .instagram {
+	color: #3f729b;
+}
+
+/* Responsive styles 
+	(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+*/
+
